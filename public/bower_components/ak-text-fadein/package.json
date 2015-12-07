@@ -1,0 +1,24 @@
+{
+  "name": "ak-text-fadein",
+  "version": "1.0.0",
+  "description": "jQuery plugin to fade in text, letter by letter",
+  "main": "src/ak-text-fadein.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OakBehringer/ak-text-fadein.git"
+  },
+  "author": "Adam Kosecki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OakBehringer/ak-text-fadein/issues"
+  },
+  "homepage": "https://github.com/OakBehringer/ak-text-fadein#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

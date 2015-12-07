@@ -1,0 +1,14 @@
+{
+  "name": "ak-text-fadein",
+  "homepage": "https://github.com/OakBehringer/ak-text-fadein",
+  "_release": "f9ef7cc2bc",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "f9ef7cc2bc4f8b515013aab82d1ed0b4020d46c8"
+  },
+  "_source": "https://github.com/OakBehringer/ak-text-fadein.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/OakBehringer/ak-text-fadein.git",
+  "_direct": true
+}

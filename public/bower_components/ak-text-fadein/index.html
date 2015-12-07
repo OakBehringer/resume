@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AK Animated Text Demo</title>
+	<link href="src/ak-text-fadein.css" rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./src/ak-text-fadein.js"></script>
+
+	<style type="text/css">
+		body {
+			font-family: Helvetica, Arial;
+		}
+		.text-primary {
+			color: blue;
+		}
+		h1 {
+			font-weight: normal;
+		}
+	</style>
+</head>
+<body>
+
+	<h1 class="ak-text-fadein">The Title of Something To Fade</h1>
+	<p class="ak-text-fadein">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br />
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br />
+		<strong>exercitation ullamco laboris</strong> nisi ut aliquip ex ea commodo consequat.</p>
+
+	<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br />
+		Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+	<script type="text/javascript">
+		$(function() {
+			$('.ak-text-fadein').akTextFadeIn();
+		});
+	</script>
+
+</body>
+</html>
