@@ -10,6 +10,10 @@
  * secret key set for the webhook in github.
  */
 
+if (!function_exists("mcrypt_encrypt")) {
+	throw new \Exception('mcrypt not installed');
+}
+
 $configFile = realpath(__DIR__ . '/../github-autodeploy.php');
 
 if ($configFile === false) {
