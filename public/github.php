@@ -10,6 +10,11 @@
  * secret key set for the webhook in github.
  */
 
+set_exception_handler(function (\Exception $e) {
+	http_response_code(500);
+	echo $e->getMessage();
+});
+
 if (!function_exists("mcrypt_encrypt")) {
 	throw new \Exception('mcrypt not installed');
 }
