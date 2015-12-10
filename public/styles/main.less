@@ -21,6 +21,7 @@
 	VARIABLES
 */
 
+@body-padding: 20px;
 
 @black-color: #2c3e50;
 @white-color: #ecf0f1;
@@ -112,6 +113,35 @@ section p.desc {
 	font-style: italic;
 	font-size: .85em;
 	color: @grey-text-color;
+}
+
+/*
+	App Menu
+*/
+
+nav.app-menu {
+	padding: .5em;
+	background: @black-color;
+	font-size: .8em;
+	text-transform: uppercase;
+	margin: 0 -@body-padding;
+
+	a {
+		color: #fff;
+		vertical-align: middle;
+		display: inline-block;
+		line-height: 1.8em;
+
+		.ico {
+			font-size: 1.8em;
+			font-weight: bold;
+			vertical-align: middle;
+			margin-right: .1em;
+		}
+		.lbl {
+			vertical-align: middle;
+		}
+	}
 }
 
 /*
@@ -254,7 +284,7 @@ section.emphasis {
 */
 
 body {
-	padding: 0 20px;
+	padding: 0 @body-padding;
 }
 
 .main-flow {
