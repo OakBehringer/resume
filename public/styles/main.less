@@ -25,13 +25,11 @@
 
 @black-color: #2c3e50;
 @white-color: #ecf0f1;
-@primary-color: #3498db;
-@secondary-color: #e74c3c;
-@grey-text-color: #999;
+@primary-color: #e74c3c;
+@grey-text-color: #838d98;
 @main-line-height-p: 1.8;
 
 .text-primary 	{ color: @primary-color !important; }
-.text-secondary { color: @secondary-color !important; }
 
 
 /*
@@ -149,7 +147,7 @@ nav.app-menu {
 */
 
 header {
-	padding: 2.5em 0 1.5em;
+	padding: 1.5em 0 1.5em;
 	margin-bottom: 1.5em;
 	border-bottom: 4px solid @black-color;
 	line-height: 1;
@@ -157,10 +155,36 @@ header {
 
 	h1 {
 		margin: 0;
-		font-size: 3em;
+		padding-left: 180px;
+		background: url('../img/ak-logo.png') 0 0 no-repeat;
+		background-size: contain;
+		height: 115px;
+		font-size: 1em;
+		position: relative;
+
+		.text {
+			position: absolute;
+			bottom: -4px;
+		}
+
+		.name {
+			font-size: 2.5em;
+			display: block;
+
+			.fn,
+			.ln {
+				display: block;
+			}
+			.ln {
+				color: @primary-color;
+			}
+		}
 
 		.title {
-			color: @secondary-color;
+			font-size: 1.8em;
+			display: block;
+			color: @grey-text-color;
+			font-weight: lighter;
 		}
 	}
 
@@ -237,12 +261,12 @@ section.emphasis {
 
 			.timespan {
 				display: block;
+				color: @grey-text-color;
 			}
 		}
 
 		.title {
 			display: block;
-			color: @secondary-color;
 			text-transform: uppercase;
 		}
 	}
@@ -260,7 +284,6 @@ section.emphasis {
 		.lbl {
 			display: block;
 			font-size: .8em;
-			color: @secondary-color;
 		}
 
 		.value-bar {
@@ -324,19 +347,28 @@ body {
 	}
 
 	header {
+		position: relative;
+
 		.contact-options {
 			padding: 0;
 			margin: 0;
 			list-style: none;
+			position: absolute;
+			bottom: .85em;
 
 			li {
-				height: 3em; // h1 font size * h1 line-height
-				position: relative;
+				line-height: 2em;
+
+				&.ph,
+				&.em {
+					display: inline;
+				}
+
+				&.ph a:after {
+					content: ' / ';
+				}
 
 				a {
-					position: absolute;
-					bottom: .2em;
-
 					&.phone,
 					&.email {
 						color: @black-color;
@@ -392,6 +424,15 @@ body {
 			li {
 				height: auto;
 				margin-top: .5em;
+				display: inline;
+
+				&:after {
+					content: ' / ';
+				}
+
+				&:last-child:after {
+					content: '';
+				}
 
 				a {
 					position: static;
