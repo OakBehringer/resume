@@ -5,14 +5,14 @@ module.exports = function(grunt) {
 			main: {
 				options: { compress: true },
 				files: {
-					'public/styles/main.css': 'public/styles/main.less'
+					'styles/main.css': 'styles/main.less'
 				}
 			}
 		},
 		watch: {
 			main: {
 				files: [
-					'public/styles/main.less'
+					'styles/main.less'
 				],
 				tasks: ['less']
 			}
