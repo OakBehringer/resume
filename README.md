@@ -2,4 +2,4 @@
 
 The professional history and skillsets of Adam Kosecki
 
-[View Resume](https://adamkosecki.com)
+[View Resume](http://adamkosecki.com)
