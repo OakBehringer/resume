@@ -1,26 +1,45 @@
 module.exports = function(grunt) {
 
 	grunt.initConfig({
-		less: {
+		'http-server': {
 			main: {
-				options: { compress: true },
+        host: '0.0.0.0',
+        port: 8484,
+        runInBackground: true,
+				cache: 0
+			}
+		},
+		sass: {
+			main: {
+				options: {
+					style: 'compressed'
+				},
 				files: {
-					'styles/main.css': 'styles/main.less'
+					'styles/main.css': 'styles/main.scss'
 				}
 			}
 		},
 		watch: {
-			main: {
+			options: {
+				livereload: true
+			},
+      css: {
+        files: [
+          'styles/*.scss'
+        ],
+        tasks: ['sass']
+      },
+			html: {
 				files: [
-					'styles/main.less'
-				],
-				tasks: ['less']
+					'*.html'
+				]
 			}
 		}
 	});
 
-	grunt.loadNpmTasks('grunt-contrib-less');
+	grunt.loadNpmTasks('grunt-http-server');
+	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.registerTask('default', ['less', 'watch']);
+	grunt.registerTask('default', ['http-server', 'sass', 'watch']);
 
 };

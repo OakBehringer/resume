@@ -4,15 +4,15 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Adam Kosecki - Web Developer</title>
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<title>Adam Kosecki - Product Developer</title>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:500,600,700' rel='stylesheet' type='text/css'>
 	<link type="text/css" href="bower_components/ak-text-fadein/src/ak-text-fadein.css" rel="stylesheet">
 	<link type="text/css" href="styles/main.css" rel="stylesheet">
 	<!--[if lt IE 9]>
 		<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
 	<![endif]-->
-	<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-	<link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 	<meta name="robots" content="nofollow" />
 </head>
 <body>
@@ -26,15 +26,15 @@
 	</nav>
 
 	<div class="main-flow">
-		<header>
-			<div class="main-col">
+		<header class="col-flow-cont main-brand-header">
+			<div class="main-col ak-brand">
+				<svg class="ak-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 409.18 287.97">
+					<path class="ak-logo-letter-a" d="M225.3,288H144.92l-5.78-36.55H86.73L80.38,288H0L69.19,0h95.12ZM130,189.68l-5-33.57a32.32,32.32,0,0,1-.75-5q-.38-4.1-3.92-32.45-.38-3.17-.93-8.67t-1.49-13.89l-2.42-27.23q-.38,3.92-1,8.77T113,88.22q-1.31,11.57-1.87,16t-.75,5.41L105,144.54l-7.83,45.13Z"/>
+					<polygon  class="ak-logo-letter-k" points="409.18 287.96 339.42 138.95 401.53 0 319.47 0 273.59 123.47 275.64 0 197.87 0 197.87 119.82 233.13 286.31 233.48 287.96 275.64 287.96 273.59 155.17 325.25 287.96 409.18 287.96" />
+				</svg>
+
 				<h1>
-					<span class="text">
-						<span class="name">
-							<span class="fn">Adam</span> <span class="ln">Kosecki</span>
-						</span>
-						<span class="title">Web Developer</span>
-					</span>
+					<span class="first-name">Adam</span> <span class="last-name">Kosecki</span>
 				</h1>
 			</div>
 
@@ -50,12 +50,12 @@
 			</div>
 		</header>
 
-		<div class="content-flow">
+		<div class="col-flow-cont content-flow">
 			<div class="main-col main-content">
 
 				<!-- Intro -->
 				<section class="intro">
-					<p>I am <span class="text-primary me">Adam Kosecki</span>, a professional web developer with 10+ years of
+					<p>I am <span class="text-primary me">Adam Kosecki</span>, a highly-analytical product developer with 10+ years of
 					experience. I create things that are clean; from beautiful, straightforward,
 					comprehensible design elements to robust &amp; readable code.</p>
 
@@ -64,7 +64,7 @@
 						and efficiency, seriousness and fun.</p>
 
 					<p>I am a leader. I make decisions when appropriate, and defer or delegate
-						without shame. People respect me and enjoy working for me.</p>
+						without shame. People respect me and enjoy working with me.</p>
 				</section>
 
 				<!-- Experience -->
@@ -73,15 +73,64 @@
 
 					<article class="job">
 						<div class="job-head">
-							<h3>Clear Software</h3>
-							<span class="timespan">2015 - Present</span>
+							<h3><a href="https://spotmii.com/" target="_blank">SpotMii</a></h3>
+							<span class="timespan">2017 - Present</span>
+							<span class="title">Co-Founder / CTO / Developer</span>
+						</div>
+
+						<p>SpotMii was created to provide fitness consumers a way to discover new and exciting
+							fitness facilities, and streamline the payment and check-in process for individuals
+							that frequent multiple gyms. Users purchase single-use passes for drop-in access and
+							scheduled classes. Payments and scheduling are handled in-app.</p>
+
+						<p>As a founder and CTO of SpotMii, I successfully designed, built, and deployed demonstrative beta
+							versions of our apps that enabled us to secure an angel round of funding. I completed and launched the app
+							in early 2019.</p>
+
+						<ul>
+							<li>Geo-located, on-demand, two-sided marketplace consisting of discrete consumer and affiliate apps</li>
+							<li>Single codebase SPA/JS app deployed to iOS App Store and Android/Google Play via Cordova</li>
+							<li>Three apps built and deployed: Consumer facing app, affiliate app for gym owners,
+								and an intranet for internal moderation.</li>
+							<li>Ember.js SPA design &amp; implementation</li>
+							<li>PHP/Phalcon API design &amp; implementation</li>
+							<li>MySQL DBA</li>
+							<li>AWS infrastructure</li>
+						</ul>
+					</article>
+
+					<article class="job">
+						<div class="job-head">
+							<h3><a href="https://www.mogulmind.com/" target="_blank">MogulMind</a></h3>
+							<span class="timespan">2016 - 2018</span>
+							<span class="title">Co-Founder / CTO / Developer</span>
+						</div>
+
+						<p>I designed and built MogulMind: an Ember.js SPA that provides insight into real estate investments,
+							helping to increase ROI and make better investment decisions. MogulMind is a first-to-market web app
+							providing traditional RE investment calculations for the modern world,
+							as well as proprietary investment advice through AI.</p>
+
+						<ul>
+							<li>As the founder's first partner, I took MogulMind from napkin idea to launch and customer acquisition.
+								I was the root of anything technical or design related.</li>
+							<li>SPA: Ember.js design &amp; implementation</li>
+							<li>REST API: PHP/Phalcon/MySQL design &amp; implementation</li>
+							<li>Marketing website design &amp; implementation</li>
+							<li>AWS infrastructure</li>
+						</ul>
+					</article>
+
+					<article class="job">
+						<div class="job-head">
+							<h3><a href="https://clearsoftware.com/" target="_blank">Clear Software</a></h3>
+							<span class="timespan">2015 - 2016</span>
 							<span class="title">VP of Product / Lead Developer</span>
 						</div>
 
-						<p>Currently leading this startup's transition from an on-premise,
-							single-user solution to a multi-tenant, SaaS, cloud application;
-							evangelizing best practices and modern development techniques;
-							and breathing new life in to old UIs.</p>
+						<p>Transitioned Clear Software from an on-premise, single-user solution to a
+							multi-tenant, SaaS, cloud application. Evangelized best practices and modern
+							development techniques.</p>
 					</article>
 
 					<article class="job">
@@ -89,22 +138,19 @@
 							<h3>HelpSystems</h3>
 							<span class="timespan">
 								2014 - 2015 / Full-time<br />
-								2015 - Present / Consultant
+								2015 - 2016 / Contract
 							</span>
 							<span class="title">Senior Developer</span>
 						</div>
 
-						<p class="desc">HelpSystems acquired Network Automation (below)</p>
+						<p class="desc">* HelpSystems acquired Network Automation (below)</p>
 
 						<p>Developed and deployed an HTML5, mobile-first invoicing application in
 							PHP/AngularJS/MySql to facilitate an end-to-end process for online ordering and payments.
 							The application included a robust API allowing it to integrate with multiple, disparate
-							back-end systems.</p>
+							back-end legacy systems.</p>
 
-						<p>Provided guidance regarding front end user experience, SEO, and deployment for the
-							company's public web entities.</p>
-
-						<p>Implemented massive ETL processes to migrate and synchronize data between HelpSystems
+						<p>Implemented ETL processes to migrate and synchronize data between HelpSystems
 							and Network Automation servers throughout the acquisition process.</p>
 					</article>
 
@@ -116,26 +162,25 @@
 							<span class="title">UI Design (Web &amp; Windows App)</span>
 						</div>
 
-						<p>Created entire public web entity for company, including all visual design elements, technological
-							decisions (language/framework/server), coding, SEO decisions, optimization for user
-							experience &amp; retention, and&hellip; everything else:</p>
+						<p>Created entire public web entity for company (no longer online as of 2019), including all visual
+							design elements, technological decisions (language/framework/server), coding, SEO decisions,
+							optimization for user experience &amp; retention, and&hellip; everything else:</p>
 						<ul>
 							<li>Lead on-borading.</li>
-							<li>Customer's account application (address info, license keys,
-								product maintenance subscriptions, etc).</li>
-							<li>Marketing and pre-sales content: press releases, news, case studies, blog.</li>
-							<li>Product downloads, both pre-sales and licensed products.</li>
-							<li>Shopping cart system: processed every purchase/transaction made through the company. Responsible
+							<li>Built a homegrown shopping cart system: processed every purchase/transaction made through the company. Responsible
 								not only for collecting payment, but issuing products and licenses to customers.</li>
-							<li>Support ticketing system, front-end and back-end.</li>
-							<li>Customer Resource Center: video tutorials, knowledgebase articles, product version history, etc. </li>
-							<li>Channel/Partner Portal: an application to provide sales collateral, news,
+							<li>Built a homegrown Customer Resource Center: video tutorials, knowledge-base articles, product version history, etc.
+								Included an internal CMS for resource center.</li>
+							<li>Built a homegrown, drag-n-drop html email creation tool for our newsletters (mailchimp before mailchimp).
+								Integrated with our blog, etc. to easily drag-n-drop existing articles to create an HTML newsletter. Included
+								mass-mailing system and managed subscribers.</li>
+							<li>Built a homegrown support ticketing system.</li>
+							<li>Built a homegrown Channel/Partner Portal: an application to provide sales collateral, news,
 								lead registration, etc for resellers/VARs/strategic partners.</li>
+							<li>Built our homegrown customer account application (address info, license keys,
+							product maintenance subscriptions, etc).</li>
+							<li>Marketing and pre-sales content: press releases, news, case studies, blog.</li>
 						</ul>
-
-						<p>Built a CMS to manage public web entity content: blog posts,
-							video tutorials, knowledgebase, version history, press releases, case studies,
-							reviews &amp; awards, webinar schedule, job postings, etc.</p>
 
 						<p>Served as company DBA, implementing best
 							practices including full normalization of existing MS SQL database. Wrote and revised countless
@@ -149,70 +194,23 @@
 
 			<div class="aside-col main-content">
 
-				<!-- Languages -->
-				<section class="emphasis">
-					<h2>Language Proficiencies</h2>
-
-					<div class="bar-graph">
-						<div class="graph-item" data-graph-item-label="HTML" data-graph-item-value="90"></div>
-						<div class="graph-item" data-graph-item-label="CSS/LESS" data-graph-item-value="90"></div>
-						<div class="graph-item" data-graph-item-label="PHP (Zend Certified)" data-graph-item-value="95"></div>
-						<div class="graph-item" data-graph-item-label="JavaScript" data-graph-item-value="80"></div>
-						<div class="graph-item" data-graph-item-label="SQL" data-graph-item-value="85"></div>
-					</div>
-				</section>
-
-				<!-- Frameworks -->
-				<section>
-					<h2><i class="pe-7s-box2"></i> Frameworks</h2>
-					<p class="desc">If it's listed here, I have a solid working knowledge of the framework and I have
-						used it professionally.</p>
-
-					<ul class="inline-list">
-						<li>AngularJS</li>
-						<li>jQuery</li>
-						<li>Bootstrap</li>
-						<li>Dojo Toolkit</li>
-						<li>Phalcon</li>
-						<li>Zend (ZF1 &amp; ZF2)</li>
-					</ul>
-				</section>
-
 				<!-- Tools of the Trade -->
 				<section>
-					<h2><i class="pe-7s-tools"></i> Tools &amp; Tech</h2>
+					<h2 class="col-top"><i class="pe-7s-box2"></i> Tech &amp; Tools</h2>
 					<p class="desc">Tools &amp; technologies regularly used to work efficiently.</p>
 
 					<ul class="inline-list">
-						<li>PHPStorm &amp; Atom</li>
-						<li>Chrome Dev Tools</li>
-						<li>Terminal</li>
+						<li>JS</li>
+						<li>Ember.JS</li>
+						<li>Cordova</li>
+						<li>Bootstrap</li>
+						<li>MySQL &amp; <span style="white-space:nowrap">MS SQL</span></li>
+						<li>Sphinx Full-Text Search Server</li>
+						<li>PHP, Phalcon</li>
+						<li>AWS Deployment &amp; Infrastructure</li>
 						<li>Photoshop</li>
 						<li>Illustrator</li>
-						<li>Git</li>
-						<li>Grunt</li>
-						<li>AWS</li>
-						<li>MySQL Workbench</li>
-						<li>VirutalBox</li>
-						<li>MS SQL Server Management Studio</li>
-						<li>REST</li>
-						<li>JSON RPC</li>
-						<li>SOAP</li>
 					</ul>
-				</section>
-
-				<section>
-					<h2><i class="pe-7s-light"></i> Interests</h2>
-					<p class="desc">Technologies I'm looking for a good reason to implement.</p>
-
-					<ul class="inline-list">
-						<li>Node.js</li>
-						<li>ES6</li>
-						<li>Meteor/Ember.js/Real-Time/Reactive Applications</li>
-						<li>Angular 2</li>
-						<li>CoffeeScript</li>
-					</ul>
-
 				</section>
 
 				<!-- Education -->
@@ -226,11 +224,21 @@
 					</p>
 				</section>
 
+				<section class="not-important">
+					<h2><i class="pe-7s-smile"></i> Other</h2>
+					<p class="desc">Has nothing to do with working with me.</p>
+					<p>I love to build things; always have, always will. There's always at least one vintage motorcycle
+						or car being worked on in my garage. Looking forward to finding the right EV conversion project.</p>
+					<p>The marriage of form and function fascinates me; when it's right, it's beautiful.</p>
+				</section>
+
 			</div>
 		</div>
 
 		<footer>
-			Contact me for work or career inquiries / <a href="tel:+18475282326">847-528-2326</a> / <a href="mailto:adamkosecki@gmail.com">adamkosecki@gmail.com</a>
+			Contact me for work or career inquiries /
+			<a class="text-nowrap" href="tel:+18475282326">847-528-2326</a> /
+			<a class="text-nowrap" href="mailto:adamkosecki@gmail.com">adamkosecki@gmail.com</a>
 		</footer>
 	</div>
 

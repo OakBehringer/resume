@@ -1,0 +1,45 @@
+/*
+	Box Sizing for all!
+*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*
+	Responsive
+*/
+
+body {
+  padding: 0 $body-padding;
+}
+
+.col-flow-cont {
+  margin: 0 auto;
+  max-width: 950px;
+}
+
+/*
+	Desktop-ish screens
+*/
+
+@media screen and (min-width: 769px), print {
+  .col-flow-cont {
+    display: flex;
+    justify-content: space-between;
+
+    .main-col   { width: 57%; }
+    .aside-col  { width: 37%; }
+  }
+}
+
+@media print {
+  body {
+    font-size: 10px;
+    max-width: 8in;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

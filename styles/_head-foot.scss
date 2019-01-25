@@ -1,0 +1,97 @@
+/*
+	App Menu
+*/
+
+nav.app-menu {
+  padding: .5em $body-padding;
+  background: #f2f2f2;
+  font-size: .8em;
+  text-transform: uppercase;
+  margin: 0 (-$body-padding);
+
+  a {
+    color: $black-color;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 1.8em;
+
+    .ico {
+      font-size: 1.8em;
+      font-weight: bold;
+      vertical-align: middle;
+      margin-right: .1em;
+    }
+    .lbl {
+      vertical-align: middle;
+    }
+  }
+}
+
+@media print {
+  nav.app-menu {
+    display: none;
+  }
+}
+
+/*
+	Site Header
+*/
+
+header.main-brand-header {
+  padding: 1.5em 0 1.5em;
+  margin-bottom: 1.5em;
+  border-bottom: 4px solid $line-color;
+
+  > .ak-brand {
+    display: flex;
+    align-items: center;
+
+    .ak-logo {
+      width: 115px;
+      margin-right: 20px;
+
+      > .ak-logo-letter-a { fill: $primary-color; }
+      > .ak-logo-letter-k { fill: #444; }
+    }
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      font-size: 2em;
+      font-weight: 700;
+      line-height: 1;
+
+      .first-name,
+      .last-name {
+        display: block;
+        color: $primary-color;
+      }
+    }
+  }
+
+  .contact-options {
+    padding: 0;
+    margin: 20px 0 0;
+    list-style: none;
+
+    li a {
+      &.phone,
+      &.email {
+        color: $black-color;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+/*
+	Site Footer
+*/
+
+footer {
+  clear: both;
+  padding: .5em 0 2em;
+  border-top: 1px solid $black-color;
+  font-size: .9em;
+  font-style: italic;
+}
