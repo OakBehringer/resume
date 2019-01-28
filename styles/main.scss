@@ -16,7 +16,7 @@
 $body-padding: 20px;
 
 $black-color: #333;
-$line-color: #444;
+$line-color: #ddd;
 $primary-color: #2861d9;
 $main-line-height-p: 1.8;
 
@@ -43,7 +43,7 @@ body {
 	font-size: 14px;
 	color: $black-color;
 	background: #fff;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 h1, h2 {
@@ -53,8 +53,8 @@ h1, h2 {
 h2 {
 	margin: 40px 0 0;
 	padding-bottom: .2em;
-	border-bottom: 2px solid $line-color;
-	font-size: 1.6em;
+	border-bottom: 1px solid $line-color;
+	font-size: 1.3em;
 	font-weight: 600;
 
 	> i {
@@ -180,6 +180,7 @@ section.intro {
 			.timespan {
 				display: block;
 				font-weight: 600;
+				font-size: .9em;
 			}
 		}
 
@@ -187,6 +188,7 @@ section.intro {
 			display: block;
 			text-transform: uppercase;
 			font-weight: 600;
+			font-size: .9em;
 		}
 	}
 }
@@ -212,8 +214,9 @@ section.intro {
 				.timespan {
 					position: absolute;
 					right: 0;
-					top: .3em;
+					top: 0.4em;
 					text-align: right;
+					line-height: 1.4;
 				}
 			}
 		}
