@@ -8,30 +8,26 @@
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700' rel='stylesheet' type='text/css'>
 	<link type="text/css" href="bower_components/ak-text-fadein/src/ak-text-fadein.css" rel="stylesheet">
 	<link type="text/css" href="styles/main.css" rel="stylesheet">
-	<!--[if lt IE 9]>
-		<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
-	<![endif]-->
 	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+	<meta name="theme-color" content="#2861d9"/>
 	<meta name="robots" content="nofollow" />
 </head>
 <body>
 	<nav class="app-menu">
-		<div class="main-flow">
-			<a onclick="window.print();">
-				<i class="ico pe-7s-print"></i>
-				<span class="lbl">Print</span>
-			</a>
+		<a onclick="window.print();">
+			<i class="ico pe-7s-print"></i>
+			<span class="lbl">Print</span>
+		</a>
 
-			<a href="docs/Adam%20Kosecki%20-%20Resume.pdf" target="_blank">
-				<i class="ico pe-7s-download"></i>
-				<span class="lbl">Download as PDF</span>
-			</a>
-		</div>
+		<a href="docs/Adam%20Kosecki%20-%20Resume.pdf" target="_blank">
+			<i class="ico pe-7s-download"></i>
+			<span class="lbl">Download as PDF</span>
+		</a>
 	</nav>
 
 	<div class="main-flow">
-		<header class="col-flow-cont main-brand-header">
+		<header class="col-flow-cont main-brand-header -align-center">
 			<div class="main-col ak-brand">
 				<svg class="ak-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 409.18 287.97">
 					<path class="ak-logo-letter-a" d="M225.3,288H144.92l-5.78-36.55H86.73L80.38,288H0L69.19,0h95.12ZM130,189.68l-5-33.57a32.32,32.32,0,0,1-.75-5q-.38-4.1-3.92-32.45-.38-3.17-.93-8.67t-1.49-13.89l-2.42-27.23q-.38,3.92-1,8.77T113,88.22q-1.31,11.57-1.87,16t-.75,5.41L105,144.54l-7.83,45.13Z"/>
@@ -60,16 +56,13 @@
 
 				<!-- Intro -->
 				<section class="intro">
-					<p>I am <span class="text-primary me">Adam Kosecki</span>, a highly-analytical product developer with 10+ years of
-					experience. I create things that are clean; from beautiful, straightforward,
-					comprehensible design elements to robust &amp; readable code.</p>
-
-					<p>I strive to understand a problem from all angles before outlining a solution.
-						My solutions are a fair compromise between form and function, fanciness
-						and efficiency, seriousness and fun.</p>
-
-					<p>I am a leader. I make decisions when appropriate, and defer or delegate
-						without shame. People respect me and enjoy working with me.</p>
+					<p>I am <span class="text-primary me">Adam Kosecki</span>, a highly-analytical application developer
+						with 15+ years of professional experience. MVP criteria focussed, my teams build things that are
+						lean and clean; from straightforward, comprehensible design elements to robust, and pivotable code.</p>
+					<p>I strive to understand the problem we are solving from all angles before outlining a solution. My
+						solutions are a fair compromise between speed and quality; form and function; seriousness and fun.</p>
+					<p>I am a leader. I make decisions when appropriate, and defer or delegate without shame.
+						People respect me and enjoy working with me.</p>
 				</section>
 
 				<!-- Experience -->
@@ -78,9 +71,44 @@
 
 					<article class="job">
 						<div class="job-head">
-							<h3><a href="https://spotmii.com/" target="_blank">SpotMii</a></h3>
-							<span class="timespan">2017 - 2019</span>
-							<span class="title">Co-Founder / Developer</span>
+							<h3><a href="https://latchel.com/" target="_blank">Latchel</a></h3>
+							<div class="job-held-details">
+								<span class="title">Principle Developer</span>
+								<span class="timespan">2019 - Present</span>
+							</div>
+						</div>
+
+						<p>Latchel is a property maintenance automation platform that handles the entire lifecycle
+							of a maintenance request, including intake, diagnostics, contractor sourcing, scheduling,
+							payment processing, and communications. It frees property managers from the labor-intensive
+							task of coordinating repairs between tenants, contractors, and property owners.</p>
+
+						<p>As the company’s first technical hire, I was in a position to provide daily impact for
+							the organization. I formed a strong relationship with the product team, led the engineers,
+							and architected our biggest solutions, including:</p>
+
+						<ul>
+							<li>AI powered maintenance request intake process that simplified request submission
+								from a 10 step diagnostic process to a single form input, reducing submission time
+								from minutes to seconds. The solution increased problem identification accuracy and
+								eliminated junk requests.</li>
+							<li>Automated, prioritized contractor queue to dispatch work offers. The solution eliminated
+								redundant, error-prone human operations while providing more predictable SLAs.</li>
+							<li>Pivoted the product focus to offer an integrated experience, allowing our software
+								partners to embed our contractor sourcing application into their own property management
+								software, within minutes. The solution provided a seamless experience for their
+								customers; allowing them to create and manage maintenance coordination without
+								leaving their app.</li>
+						</ul>
+					</article>
+
+					<article class="job">
+						<div class="job-head">
+							<h3>SpotMii</h3>
+							<div class="job-held-details">
+								<span class="title">Co-Founder / Developer</span>
+								<span class="timespan">2017 - 2019</span>
+							</div>
 						</div>
 
 						<p>SpotMii was created to provide fitness consumers a way to discover new and exciting
@@ -106,9 +134,11 @@
 
 					<article class="job">
 						<div class="job-head">
-							<h3><a href="https://www.mogulmind.com/" target="_blank">MogulMind</a></h3>
-							<span class="timespan">2016 - 2018</span>
-							<span class="title">Co-Founder / Developer</span>
+							<h3>MogulMind</h3>
+							<div class="job-held-details">
+								<span class="title">Co-Founder / Developer</span>
+								<span class="timespan">2016 - 2018</span>
+							</div>
 						</div>
 
 						<p>I designed and built MogulMind: an Ember.js SPA that provides insight into real estate investments,
@@ -128,24 +158,25 @@
 
 					<article class="job">
 						<div class="job-head">
-							<h3><a href="https://clearsoftware.com/" target="_blank">Clear Software</a></h3>
-							<span class="timespan">2015 - 2016</span>
-							<span class="title">VP of Product / Lead Developer</span>
+							<h3><a href="http://www.clearsoftware.com/" target="_blank">Clear Software</a></h3>
+							<div class="job-held-details">
+								<span class="title">VP of Product &amp; Lead Developer</span>
+								<span class="timespan">2015 - 2016</span>
+							</div>
 						</div>
 
-						<p>Transitioned Clear Software from an on-premise, single-user solution to a
-							multi-tenant, SaaS, cloud application. Evangelized best practices and modern
-							development techniques.</p>
+						<p>Transitioned Clear Software, a no-code SAP integration solution, from an on-premise,
+							single-user solution to a multi-tenant, SaaS, cloud application. Evangelized best
+							practices and modern development techniques. Clear went on to be acquired by Microsoft.</p>
 					</article>
 
 					<article class="job">
 						<div class="job-head">
 							<h3>HelpSystems</h3>
-							<span class="timespan">
-								2014 - 2015 / Full-time<br />
-								2015 - 2016 / Contract
-							</span>
-							<span class="title">Senior Developer</span>
+							<div class="job-held-details">
+								<span class="title">Senior Developer</span>
+								<span class="timespan">2014 - 2016</span>
+							</div>
 						</div>
 
 						<p class="desc">* HelpSystems acquired Network Automation (below)</p>
@@ -162,9 +193,10 @@
 					<article class="job">
 						<div class="job-head">
 							<h3>Network Automation</h3>
-							<span class="timespan">2005 - 2014</span>
-							<span class="title">Lead Developer,</span>
-							<span class="title">UI Design (Web &amp; Windows App)</span>
+							<div class="job-held-details">
+								<span class="title">Lead Developer &amp; Designer</span>
+								<span class="timespan">2005 - 2014</span>
+							</div>
 						</div>
 
 						<p>Created entire public web entity for company (no longer online as of 2019), including all visual
@@ -201,27 +233,29 @@
 
 				<!-- Tools of the Trade -->
 				<section>
-					<h2 class="col-top"><i class="pe-7s-box2"></i> Tech &amp; Tools</h2>
+					<h2 class="col-top"><i class="pe-7s-box2" style="font-weight: bold"></i> Tech &amp; Tools</h2>
 					<p class="desc">Tools &amp; technologies regularly used to work efficiently.</p>
 
 					<ul class="inline-list">
 						<li>JS</li>
+						<li>Next.JS</li>
+						<li>React</li>
+						<li>Node</li>
+						<li>Tailwind</li>
+						<li>MaterialUI</li>
+						<li>OpenAI</li>
+						<li>Supabase</li>
+						<li>SQL</li>
 						<li>Ember.JS</li>
-						<li>Cordova</li>
-						<li>Bootstrap</li>
-						<li>MySQL &amp; <span style="white-space:nowrap">MS SQL</span></li>
-						<li>Sphinx Full-Text Search Server</li>
-						<li>PHP, Phalcon</li>
-						<li>AWS Deployment &amp; Infrastructure</li>
-						<li>Photoshop</li>
-						<li>Illustrator</li>
+						<li>PHP, Laravel</li>
+						<li>More</li>
 					</ul>
 				</section>
 
 				<!-- Education -->
 				<section>
 					<h2><i class="pe-7s-study"></i> Education</h2>
-					<p>
+					<p class="main-p-fs">
 						Bachelor of Science in Computer Science, <br>
 						Programming Emphasis <br>
 						Western Illinois University 2000-2004 <br>
@@ -232,9 +266,8 @@
 				<section class="not-important">
 					<h2><i class="pe-7s-smile"></i> Other</h2>
 					<p class="desc">Has nothing to do with working with me.</p>
-					<p>I love to build things; always have, always will. There's always at least one vintage motorcycle
-						or car being worked on in my garage. Looking forward to finding the right EV conversion project.</p>
-					<p>The marriage of form and function motivates me.</p>
+					<p class="main-p-fs">I love to build things; always have, always will. There's always at least one vintage motorcycle
+						or car being worked on in my garage. I work to live; I do not live to work; and thus I work smart.</p>
 				</section>
 
 			</div>
