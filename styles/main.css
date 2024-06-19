@@ -440,22 +440,6 @@ h2.col-top {
   margin-top: 0.75em;
 }
 
-ul.inline-list {
-  list-style: none;
-  padding: 0;
-  line-height: 1.8;
-  font-size: 0.9rem;
-}
-ul.inline-list li {
-  display: inline;
-}
-ul.inline-list li::after {
-  content: ", ";
-}
-ul.inline-list li:last-child::after {
-  content: "";
-}
-
 abbr[title] {
   text-decoration: none;
 }
@@ -473,17 +457,9 @@ article ul li {
   line-height: 1.8;
 }
 
-section p.desc {
+p.desc {
   font-style: italic;
   font-size: 0.85em;
-}
-
-section.not-important > h2 {
-  color: #999;
-  border-color: #999;
-}
-section.not-important > p {
-  color: #999;
 }
 
 /*
@@ -654,25 +630,20 @@ header.main-brand-header > .ak-brand h1 {
   font-size: 2em;
   font-weight: 700;
   line-height: 1;
-}
-header.main-brand-header > .ak-brand h1 .first-name,
-header.main-brand-header > .ak-brand h1 .last-name {
-  display: block;
   color: #2861d9;
+  width: 6em;
 }
 header.main-brand-header .contact-options {
-  padding: 0;
   margin: 2em 0 0 0;
-  list-style: none;
   font-size: 0.9em;
 }
-header.main-brand-header .contact-options li {
+header.main-brand-header .contact-options > .contact-opt {
   margin-top: 0.2em;
 }
-header.main-brand-header .contact-options li:first-child {
+header.main-brand-header .contact-options > .contact-opt:first-child {
   margin-top: 0;
 }
-header.main-brand-header .contact-options li a.phone, header.main-brand-header .contact-options li a.email {
+header.main-brand-header .contact-options a.phone, header.main-brand-header .contact-options a.email {
   color: #333;
   white-space: nowrap;
 }

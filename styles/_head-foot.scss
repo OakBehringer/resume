@@ -60,27 +60,21 @@ header.main-brand-header {
       font-size: 2em;
       font-weight: 700;
       line-height: 1;
-
-      .first-name,
-      .last-name {
-        display: block;
-        color: $primary-color;
-      }
+      color: $primary-color;
+      width: 6em;
     }
   }
 
   .contact-options {
-    padding: 0;
     margin: 2em 0 0 0;
-    list-style: none;
     font-size: .9em;
 
-    li {
+    > .contact-opt {
       margin-top: .2em;
       &:first-child { margin-top: 0; }
     }
 
-    li a {
+    a {
       &.phone,
       &.email {
         color: $black-color;

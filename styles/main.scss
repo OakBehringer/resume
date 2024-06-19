@@ -76,27 +76,6 @@ h2 {
 	}
 }
 
-ul.inline-list {
-	list-style: none;
-	padding: 0;
-	line-height: $main-line-height-p;
-	font-size: $main-p-font-size;
-
-	li {
-		display: inline;
-
-		&::after {
-			content: ', ';
-		}
-
-		&:last-child {
-			&::after {
-				content: '';
-			}
-		}
-	}
-}
-
 abbr[title] {
 	text-decoration: none;
 }
@@ -117,19 +96,9 @@ article ul {
 	}
 }
 
-section p.desc {
+p.desc {
 	font-style: italic;
 	font-size: .85em;
-}
-
-section.not-important {
-	> h2 {
-		color: #999;
-		border-color: #999;
-	}
-	> p {
-		color: #999;
-	}
 }
 
 /*
