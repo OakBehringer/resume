@@ -1,23 +1,29 @@
 {
-  "name": "ak-resume",
-  "version": "2.0.0",
-  "description": "Adam Kosecki's resume - learn about the professional history and skillsets of Adam Kosecki",
+  "name": "resume",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "wds --node-resolve --open --watch",
-    "sass-watch": "sass styles/main.scss styles/main.css --watch"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/OakBehringer/resume.git"
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.1.3"
   },
-  "author": "Adam Kosecki",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/OakBehringer/resume/issues"
-  },
-  "homepage": "http://adamkosecki.com/",
   "devDependencies": {
-    "@web/dev-server": "^0.4.3",
-    "sass": "^1.72.0"
+    "@eslint/js": "^9.21.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "vite": "^6.2.0"
   }
 }
