@@ -12,6 +12,9 @@ function App() {
                   <a className="underline" href="/docs/Adam%20Kosecki%20-%20Resume.pdf" target="_blank">Resume</a>
               </div>
               <div>
+                  <a className="underline" href="https://www.linkedin.com/in/adam-kosecki-12867329/" target="_blank">LinkedIn</a>
+              </div>
+              <div>
                   <a className="underline" href="https://www.instagram.com/oakbehringer/" target="_blank">Instagram</a>
               </div>
               <div>
